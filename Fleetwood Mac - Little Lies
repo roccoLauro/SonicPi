@@ -1,0 +1,58 @@
+#Fleetwood Mac - Little Lies
+
+#if I could turn the page, in time then I'd rearrange just a day or two
+play :Fs5
+sleep 0.25
+play :Gs5
+sleep 0.25
+play :a5
+sleep 0.25
+play :Gs5
+sleep 0.5
+play :Fs5
+sleep 0.25
+play :Cs5
+sleep 0.625
+play :Cs5
+sleep 0.5
+play :Fs5
+sleep 0.25
+play :Gs5
+sleep 0.25
+play :a5
+sleep 0.25
+play :Gs5
+sleep 0.5
+play :Fs5
+sleep 0.5
+play :Cs5
+sleep 0.5
+play :b4
+sleep 0.25
+play :a4
+sleep 0.25
+play :b4
+sleep 0.25
+play :a4
+sleep 0.5
+play :a4
+sleep 1
+
+#skips to chorus
+#tell me lies, tell me sweet little lies
+play :a5
+sleep 0.5
+play :a5
+sleep 0.5
+play :a5
+sleep 0.75
+play :Fs5
+sleep 0.25
+play :e5
+sleep 0.5
+play :Fs5
+sleep 0.25
+play :e5
+sleep 0.25
+play :e5
+sleep 0.625
