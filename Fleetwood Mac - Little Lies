@@ -1,45 +1,92 @@
 #Fleetwood Mac - Little Lies
 
-#if I could turn the page, in time then I'd rearrange just a day or two
-play :Fs5
-sleep 0.25
-play :Gs5
-sleep 0.25
-play :a5
-sleep 0.25
-play :Gs5
-sleep 0.5
-play :Fs5
-sleep 0.25
-play :Cs5
-sleep 0.625
-play :Cs5
-sleep 0.5
-play :Fs5
-sleep 0.25
-play :Gs5
-sleep 0.25
-play :a5
-sleep 0.25
-play :Gs5
-sleep 0.5
-play :Fs5
-sleep 0.5
-play :Cs5
-sleep 0.5
-play :b4
-sleep 0.25
-play :a4
-sleep 0.25
-play :b4
-sleep 0.25
-play :a4
-sleep 0.5
-play :a4
-sleep 1
+#Verse 1
+#If I could turn the page, in time then I'd rearrange just a day or two. Although I'm not making plans, I hope that you understand there's a reason why.
+2.times do
+  play :Fs5
+  sleep 0.25
+  play :Gs5
+  sleep 0.25
+  play :a5
+  sleep 0.25
+  play :Gs5
+  sleep 0.5
+  play :Fs5
+  sleep 0.25
+  play :Cs5
+  sleep 0.625
+  play :Cs5
+  sleep 0.5
+  play :Fs5
+  sleep 0.25
+  play :Gs5
+  sleep 0.25
+  play :a5
+  sleep 0.25
+  play :Gs5
+  sleep 0.5
+  play :Fs5
+  sleep 0.5
+  play :Cs5
+  sleep 0.5
+  play :b4
+  sleep 0.25
+  play :a4
+  sleep 0.25
+  play :b4
+  sleep 0.25
+  play :a4
+  sleep 0.5
+  play :a4
+  sleep 1
+end
 
-#skips to chorus
-#tell me lies, tell me sweet little lies
+#But I couldn't find a way... No more broken hearts...
+play :c5
+sleep 0.25
+play :Fs5
+sleep 0.25
+play :Gs5
+sleep 0.25
+play :a5
+sleep 0.25
+play :Gs5
+sleep 0.5
+play :Gs5
+sleep 0.5
+play :Fs5
+sleep 0.25
+play :c5
+sleep 0.5
+play :c5
+
+#So I'll settle for one day; to believe in you... we're better off a part; let's give it a try.
+play :c5
+sleep 0.25
+play :Fs5
+sleep 0.25
+play :Gs5
+sleep 0.25
+play :a5
+sleep 0.25
+play :Gs5
+sleep 0.5
+play :Gs5
+sleep 0.25
+play :Fs5
+sleep 0.5
+play :c5
+sleep 0.25
+play :c5
+sleep 0.5
+play :b4
+sleep 0.25
+play :a4
+sleep 1.5
+play :a4
+
+#First half of the chorus.
+#Tell me lies, tell me sweet little lies.
 play :a5
 sleep 0.5
 play :a5
