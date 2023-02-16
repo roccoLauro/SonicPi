@@ -1,6 +1,10 @@
 #Fleetwood Mac - Little Lies
 
-#Verse 1
+use_synth :pretty_bell
+use_synth :beep
+use_synth :saw
+use_synth :fm
+
 #If I could turn the page, in time then I'd rearrange just a day or two. Although I'm not making plans, I hope that you understand there's a reason why.
 2.times do
   play :Fs5
@@ -86,7 +90,7 @@ sleep 1.5
 play :a4
 
 #First half of the chorus.
-#Tell me lies, tell me sweet little lies.
+#Tell me lies, tell me sweet little lies...
 play :a5
 sleep 0.5
 play :a5
