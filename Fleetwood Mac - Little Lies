@@ -1,11 +1,36 @@
-#Fleetwood Mac - Little Lies
+#Fleetwood Mac - Little Lies + Modern English - I Melt With You REMIX
+
+me_intro = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Instrumental.wav"
+
+sample me_intro, amp: 5
+sleep 12
+
+live_loop :me do
+  1.times do
+    me_vocals1 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Vocals1.wav"
+    sample me_vocals1, amp: 5
+    sleep 12
+  end
+  
+  1.times do
+    me_vocals3 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Vocals3.wav"
+    sample me_vocals3, amp: 5
+    sleep 12.5
+  end
+  
+  1.times do
+    me_vocals4 ="C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Vocals4.wav"
+    sample me_vocals4, amp: 5
+  end
+  stop
+end
 
 use_synth :pretty_bell
 use_synth :beep
 use_synth :saw
 use_synth :fm
 
-#If I could turn the page, in time then I'd rearrange just a day or two. Although I'm not making plans, I hope that you understand there's a reason why.
+#If I could turn the page, in time then I'd rearrange just a day or two.
 2.times do
   play :Fs5
   sleep 0.25
@@ -45,7 +70,7 @@ use_synth :fm
   sleep 1
 end
 
-#But I couldn't find a way... No more broken hearts...
+#But I couldn't find a way...
 play :c5
 sleep 0.25
 play :Fs5
@@ -64,7 +89,7 @@ play :c5
 sleep 0.5
 play :c5
 
-#So I'll settle for one day; to believe in you... we're better off a part; let's give it a try.
+#So I'll settle for one day; to believe in you...
 play :c5
 sleep 0.25
 play :Fs5
@@ -91,19 +116,21 @@ play :a4
 
 #First half of the chorus.
 #Tell me lies, tell me sweet little lies...
-play :a5
-sleep 0.5
-play :a5
-sleep 0.5
-play :a5
-sleep 0.75
-play :Fs5
-sleep 0.25
-play :e5
-sleep 0.5
-play :Fs5
-sleep 0.25
-play :e5
-sleep 0.25
-play :e5
-sleep 0.625
+2.times do
+  play :a5
+  sleep 0.5
+  play :a5
+  sleep 0.5
+  play :a5
+  sleep 0.75
+  play :Fs5
+  sleep 0.25
+  play :e5
+  sleep 0.5
+  play :Fs5
+  sleep 0.25
+  play :e5
+  sleep 0.25
+  play :e5
+  sleep 0.625
+end
