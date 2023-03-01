@@ -1,6 +1,6 @@
 #Fleetwood Mac - Little Lies + Modern English - I Melt With You REMIX
 
-me_intro = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Instrumental.wav"
+me_intro = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Instrumental2.wav"
 
 sample me_intro, amp: 5
 sleep 12
@@ -15,7 +15,7 @@ live_loop :me do
   1.times do
     me_vocals3 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Vocals3.wav"
     sample me_vocals3, amp: 5
-    sleep 12.5
+    sleep 12.2
   end
   
   1.times do
@@ -30,7 +30,7 @@ use_synth :beep
 use_synth :saw
 use_synth :fm
 
-#Moving forwards, using all my breath. Making love to you was never second best...
+#If I could turn the page, in time then I'd rearrange just a day or two.
 2.times do
   play :Fs5
   sleep 0.25
@@ -70,7 +70,7 @@ use_synth :fm
   sleep 1
 end
 
-#I saw the world, crashing all around your face...
+#But I couldn't find a way...
 play :c5
 sleep 0.25
 play :Fs5
@@ -89,7 +89,7 @@ play :c5
 sleep 0.5
 play :c5
 
-# Never really knowing it was always; mesh and lace...
+#So I'll settle for one day; to believe in you...
 play :c5
 sleep 0.25
 play :Fs5
@@ -115,7 +115,7 @@ sleep 1.5
 play :a4
 
 #First half of the chorus.
-#I'll stop the world and melt with you...
+#Tell me lies, tell me sweet little lies...
 2.times do
   play :a5
   sleep 0.5
