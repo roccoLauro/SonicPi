@@ -1,0 +1,10 @@
+#Challenge F
+x = 0.15
+
+num = 21
+
+87.times do
+  num = num + 1
+  play num
+  sleep x
+end
