@@ -1,6 +1,7 @@
 #Simple Minds - Don't You (Forget About Me)
 
 use_bpm 56
+use_synth :dsaw
 
 #Hey hey hey hey!
 sm_intro = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro).wav"
@@ -11,22 +12,33 @@ sleep 16.75
 sm_instrumental = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Instrumental).wav"
 sample sm_instrumental, amp: 8.6
 
+sm_lyrics = "C:/Users/rocco_lauro/Downloads/Simple Minds - Don't You (Forget About Me) [Isolated Vocal]2.wav"
+sample sm_lyrics, amp: 6.6
+
 #measure1
-play :C5
+play :C5, amp: 1.25
 sleep 1
-play :F4
+play :F4, amp: 1.25
 sleep 1.5
-play :F4
+play :F4, amp: 1.25
 sleep 0.5
 
+#measure2
+play :E4, amp: 1.25
+sleep 0.125
+play :F4, amp: 1.25
+sleep 0.125
+play :G4, amp: 1.25
+sleep 0.125
+play :F4, amp: 1.25
+sleep 0.625
+
+m3notes = [:C4, :D4, :F4, :G4, :F4]
+sleeps = [0,0.125, 0.125, 0.125, 0.625]
+i = 0
+
 5.times do
-  #measure2&3
-  play :E4
-  sleep 0.125
-  play :F4
-  sleep 0.125
-  play :G4
-  sleep 0.125
-  play :F4
-  sleep 0.625
+  play (m3notes[i])
+  sleep (sleeps[i])
+  i = i + 1
 end
