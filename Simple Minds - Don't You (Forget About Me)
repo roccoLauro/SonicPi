@@ -3,6 +3,10 @@
 use_bpm 56
 use_synth :pluck
 
+me_synth4 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You SYNTH4.wav"
+sample me_synth4, amp: 7.5
+sleep 8
+
 #Hey hey hey hey!
 sm_intro = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro).wav"
 sample sm_intro, amp: 8.6
@@ -16,12 +20,23 @@ sm_lyrics = "C:/Users/rocco_lauro/Downloads/Simple Minds - Don't You (Forget Abo
 sample sm_lyrics, amp: 6.6
 
 #measure1
-play :C5, amp: 1.5
-sleep 1
-play :F4, amp: 1.5
-sleep 1.5
-play :F4, amp: 1.5
-sleep 0.5
+define :notec5 do |a,b|
+  play a, amp: 1.5
+  sleep b
+end
+notec5 :c5, 1
+
+define :notef4 do |c,d|
+  play c, amp: 1.5
+  sleep d
+end
+notef4 :F4, 1.5
+
+define :notef42 do |e,f|
+  play e, amp: 1.5
+  sleep f
+end
+notef42 :F4, 0.5
 
 #measure2
 play :E4, amp: 1.5
@@ -44,7 +59,7 @@ i = 0
 end
 
 #measure4
-5.times do
+4.times do
   play :G4, amp: 1.5
   sleep 0.5
   play :G4, amp: 1.5
@@ -63,6 +78,30 @@ end
   sleep 1
   play :F4, amp: 1.5
   sleep 1.5
-  play :F4, amp: 1.5
-  sleep 0.5
 end
+
+#chorus
+play :C5, amp: 3
+sleep 1
+play :F4, amp: 3
+sleep 1.75
+play :A4, amp: 3
+sleep 0.5
+play :B4, amp: 3
+sleep 0.5
+play :A4, amp: 3
+sleep 0.5
+play :G4, amp: 3
+sleep 0.5
+play :F4, amp: 3
+sleep 0.5
+play :F4, amp: 3
+sleep 1.5
+play :B4, amp: 3
+sleep 0.5
+play :B4, amp: 3
+sleep 0.5
+play :B4, amp: 3
+sleep 0.5
+play :C5, amp: 3
+sleep 0.5
