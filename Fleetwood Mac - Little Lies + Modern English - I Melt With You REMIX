@@ -1,16 +1,20 @@
 #Fleetwood Mac - Little Lies + Modern English - I Melt With You REMIX
 
 me_intro1 = "C:/Users/rocco_lauro/Downloads/Modern English InstrumentalF1.wav"
-sample me_intro1, amp: 5.5
+sample me_intro1, amp: 6.625
 sleep 2
 
 me_intro2 = "C:/Users/rocco_lauro/Downloads/Modern English InstrumentalF2.wav"
-sample me_intro2, amp: 7
+sample me_intro2, amp: 6.875
 sleep 2
 
 me_intro3 = "C:/Users/rocco_lauro/Downloads/Modern English InstrumentalF3.wav"
-sample me_intro3, amp: 8.75
-sleep 8
+sample me_intro3, amp: 7
+sleep 2.45
+
+me_intro4 = "C:/Users/rocco_lauro/Downloads/Modern English InstrumentalF4.wav"
+sample me_intro4, amp: 7.25
+sleep 6
 
 live_loop :me do
   1.times do
@@ -22,8 +26,14 @@ live_loop :me do
   
   1.times do
     me_vocals3 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You Vocals3.wav"
-    sample me_vocals3, amp: 7.5
+    sample me_vocals3, amp: 7.25
     sleep 12.2
+  end
+  
+  1.times do
+    me_synth3 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You SYNTH4.wav"
+    sample me_synth3, amp: 7.25
+    sleep 8.5
   end
   stop
 end
@@ -35,10 +45,7 @@ define :f5g5 do
   sleep 0.25
 end
 
-use_synth :pretty_bell
-use_synth :beep
-use_synth :saw
-use_synth :fm
+use_synth :pluck
 
 #Dream of better lives, the kind which never hates...
 2.times do
