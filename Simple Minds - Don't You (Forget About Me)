@@ -4,17 +4,25 @@ use_bpm 56
 use_synth :pluck
 
 me_synth4 = "C:/Users/rocco_lauro/Downloads/Modern English   I Melt With You SYNTH4.wav"
-sample me_synth4, amp: 7.5
+sample me_synth4, amp: 7.25
 sleep 8
 
 #Hey hey hey hey!
-sm_intro = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro).wav"
-sample sm_intro, amp: 8.6
-sleep 16.75
+sm_intro11 = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro)1.1.wav"
+sample sm_intro11, amp: 5.25
+sleep 1.8
+
+sm_intro12 = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro)1.2.wav"
+sample sm_intro12, amp: 6.25
+sleep 1.4
+
+sm_intro13 = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Intro)1.3.wav"
+sample sm_intro13, amp: 7.25
+sleep 13.5
 
 #Won't you, come see about me? I'll be alone, dancing you know it baby. Tell me, your troubles and doubts... giving me everything, inside and out.
 sm_instrumental = "C:/Users/rocco_lauro/Downloads/Simple Minds - Dont You (Forget About Me) (Instrumental).wav"
-sample sm_instrumental, amp: 8.6
+sample sm_instrumental, amp: 7.25
 
 sm_lyrics = "C:/Users/rocco_lauro/Downloads/Simple Minds - Don't You (Forget About Me) [Isolated Vocal]3.wav"
 sample sm_lyrics, amp: 6.6
@@ -81,6 +89,7 @@ end
 end
 
 #chorus
+#Don't you... forget about me. Don't, don't, don't don't; don't you... forget about me!
 play :C5, amp: 3
 sleep 1
 play :F4, amp: 3
