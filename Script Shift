@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Shift : MonoBehaviour
+{
+    public Vector3 positionChange;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        positionChange = new Vector3(0, 0, 1);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position += (positionChange * Time.deltaTime);
+            Debug.Log("Z-Position: " + transform.position.z);
+
+        //Use the conditional to either increment or decrement the y-value
+        if (transform.position.z > 14.365)
+        {
+            positionChange = new Vector3(0, 0, -1); //move the platform RIGHT
+        }
+        else if (transform.position.z < 14.365)
+        {
+            positionChange = new Vector3(0, 0, 1); //move the platform LEFT
+        }
+        else
+        {
+            //just chill
+        }
+    }
+}
